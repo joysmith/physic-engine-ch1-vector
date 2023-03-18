@@ -11,6 +11,7 @@ const normalizeVector = (sketch) => {
   };
 
   sketch.draw = () => {
+    // set bg layer to black
     sketch.background(0);
     //1 create position vector from origin
     let pos = sketch.createVector(200, 200);
@@ -24,6 +25,7 @@ const normalizeVector = (sketch) => {
     v.mult(50);
     //6 move coordinate space to center
     sketch.translate(sketch.width / 2, sketch.height / 2);
+
     sketch.strokeWeight(4);
     sketch.stroke(255);
     sketch.line(0, 0, v.x, v.y);
