@@ -11,7 +11,6 @@ const s = (sketch) => {
   };
 };
 
-new p5(s, "container2");
 new p5(s, "container3");
 new p5(s, "container4");
 new p5(s, "container5");
